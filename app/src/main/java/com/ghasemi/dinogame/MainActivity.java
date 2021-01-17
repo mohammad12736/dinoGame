@@ -7,7 +7,7 @@ import android.webkit.WebView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private WebView webView;
+    private WebView wv;
     String url ="file:///android_asset/index.html";
 
     @Override
@@ -15,9 +15,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        webView =findViewById(R.id.webView);
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl(url);
+        wv =findViewById(R.id.webView);
+        wv.getSettings().setJavaScriptEnabled(true);
+        wv.loadUrl(url);
+
 
     }
 }
